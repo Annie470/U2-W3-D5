@@ -429,4 +429,21 @@ form button:hover {
   background-color: rgb(236, 12, 12);
   color: white;
   border-radius: 30px;
+}
+
+#special-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#special-main button {
+  border-radius: 30px;
+  padding: 0.3em;
+  font-size: 2rem;
+  cursor: pointer;
+}
+#special-main h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */

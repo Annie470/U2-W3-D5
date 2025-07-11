@@ -143,3 +143,17 @@ form {
     color: white;
     @include rounded;
 }
+
+#special-main {
+    @include flexCol;
+    button{
+        @include rounded;
+        padding: 0.3em;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    h1 {
+ font-size: 3rem;
+ margin-bottom: 1rem;
+    }
+}
