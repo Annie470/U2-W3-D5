@@ -29,12 +29,12 @@ fetch(endpoint + eventId, {
         <p class="my-small p-small">${prodotto.brand}</p>
         <p class="my-small">${prodotto.price}€</p>
         <button onclick="dismorfismo('${prodotto._id}')" class="my-small" style="width: 80px">Riforma</button>
-        <button onclick="addio()" class="my-small" style="width: 80px">Stermina</button>
+        <button onclick="apriModale()" class="my-small" style="width: 80px">Stermina</button>
       </div>
     `;
   })
   .catch((err) => {
-    console.log(err);
+    alert(err.message);
   });
 
 const dismorfismo = function () {
@@ -57,6 +57,14 @@ const addio = function () {
       }
     })
     .catch((err) => {
-      console.log(err);
+      alert(err.message);
     });
 };
+
+const modale = document.getElementById("modale");
+function apriModale() {
+  modale.classList.add("active");
+}
+function chiudiModale() {
+  modale.classList.remove("active");
+}

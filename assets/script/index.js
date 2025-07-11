@@ -42,7 +42,7 @@ const caricaCard = function () {
       }
     })
     .catch((err) => {
-      console.log(err);
+      alert(err.message);
     });
 };
 const allArrembaggio = function (Id) {

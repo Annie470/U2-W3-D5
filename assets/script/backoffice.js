@@ -25,7 +25,7 @@ if (eventId) {
       document.getElementById("price").value = data.price;
     })
     .catch((err) => {
-      console.log(err);
+      alert(err.message);
     });
 }
 
@@ -85,8 +85,7 @@ form.addEventListener("submit", (e) => {
       }
     })
     .catch((err) => {
-      alert("Ops!");
-      console.log("Ops!", err);
+      alert(`Ops! ${err.message}`);
     });
 });
 
