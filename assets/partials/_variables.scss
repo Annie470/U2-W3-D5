@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+//COLORI COLORATI
+$primary :#FFC313;
+$secondary : rgb(255, 255, 0);
+
+//NIENTE DECORAZIONI
+.no-underline {
+    text-decoration: none;
+    &:visited {
+    color: black;
+    }
+}
+
+//TAGLIE DI TUTTI I TIPI
+$sizes-map: (
+    small: 1rem,
+    normal: 2rem,
+    big: 3rem); 
+
+//FONT ZILLIANI
+$fontZilla : "Poiret One", sans-serif;
+@mixin main-title {
+    font : { 
+        family: "Quicksand", sans-serif;
+        weight: 800;
+        size: 4rem;
+    }
+} 
+@each $name, $value in $sizes-map {
+    .f-#{$name} {
+        font-size: $value;
+    }
+}
+
+//SPAZIATURE SPAZIALI
+@each $name, $value in $sizes-map {
+    .p-#{$name} {
+        padding: $value;
+    }
+}
+@each $name, $value in $sizes-map {
+    .px-#{$name} {
+        padding-left: $value;
+        padding-right: $value;
+    }
+}
+@each $name, $value in $sizes-map {
+    .py-#{$name} {
+        padding-top: $value;
+        padding-bottom: $value;
+    }
+}
+@each $name, $value in $sizes-map {
+    .m-#{$name} {
+        margin: $value;
+    }
+}
+@each $name, $value in $sizes-map {
+    .mx-#{$name} {
+        margin-right: $value;
+        margin-left: $value;
+    }
+}
+@each $name, $value in $sizes-map {
+    .my-#{$name} {
+        margin-top: $value;
+        margin-bottom: $value;
+    }
+}
+
+//DISPLAY MORBIDO e FLAFFY
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flexSB {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin flexRow {
+    @include flex;
+    flex-direction: row;
+ }
+@mixin flexRowSB {
+    @include flexSB;
+    flex-direction: row;
+}
+@mixin flexCol {
+    @include flex;
+    flex-direction: column;
+}
+@mixin flexColSB {
+    @include flexSB;
+    flex-direction: column;
+}
+
+//COSI' ROTONDI
+@mixin rounded {
+    border-radius: 30px;
+}
+@mixin roundedDott {
+    border: 1px dotted black;
+    border-radius: 50px;
+} 
+
+
+//VOLA VIAAA
+@mixin floating {
+   box-shadow: 5px 5px 13px -2px rgba(0,0,0,0.54);
+   transition: all 0.3s linear;
+   &:hover {
+    transform: scale(1.2);
+   }
+}
+
+@mixin floating-button {
+     width: 20%;
+            margin-bottom: 1em;
+            @include roundedDott;
+            background-color: $primary;
+            transition: all 0.2s linear;
+      &:hover {
+                border: none;
+                background-color: $secondary;
+                transform: scale(1.5)
+            }
+}

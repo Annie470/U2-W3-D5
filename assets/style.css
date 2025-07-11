@@ -1,0 +1,339 @@
+/* CSS Reset */
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+.no-underline:visited {
+  color: black;
+}
+
+.f-small {
+  font-size: 1rem;
+}
+
+.f-normal {
+  font-size: 2rem;
+}
+
+.f-big {
+  font-size: 3rem;
+}
+
+.p-small {
+  padding: 1rem;
+}
+
+.p-normal {
+  padding: 2rem;
+}
+
+.p-big {
+  padding: 3rem;
+}
+
+.px-small {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-normal {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-big {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.py-small {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-normal {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-big {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.m-small {
+  margin: 1rem;
+}
+
+.m-normal {
+  margin: 2rem;
+}
+
+.m-big {
+  margin: 3rem;
+}
+
+.mx-small {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.mx-normal {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.mx-big {
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+.my-small {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-normal {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-big {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 600;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #FFC313;
+  width: 100%;
+  animation: buongiorno1 2s ease-in forwards;
+}
+@keyframes buongiorno1 {
+  0% {
+    transform: translate(-250vh, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+header nav img {
+  width: 8%;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  list-style-type: none;
+}
+header nav ul li {
+  border-radius: 30px;
+  transition: all 0.3s linear;
+}
+header nav ul li:hover {
+  background-color: rgb(255, 255, 0);
+  border: 1px dotted black;
+  border-radius: 50px;
+  transform: scale(1.2);
+}
+header #hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px dotted black;
+  border-radius: 50px;
+  width: 60%;
+  animation: buongiorno2 2s ease-in forwards;
+}
+@keyframes buongiorno2 {
+  0% {
+    transform: translate(0, -250vh);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+header #hero .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+header #hero .row h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 800;
+  font-size: 4rem;
+}
+header #hero .row img {
+  width: 45%;
+  border-radius: 30px;
+  box-shadow: 5px 5px 13px -2px rgba(0, 0, 0, 0.54);
+  transition: all 0.3s linear;
+}
+header #hero .row img:hover {
+  transform: scale(1.2);
+}
+header #hero #btn-container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+header #hero #btn-container button {
+  width: 20%;
+  margin-bottom: 1em;
+  border: 1px dotted black;
+  border-radius: 50px;
+  background-color: #FFC313;
+  transition: all 0.2s linear;
+}
+header #hero #btn-container button:hover {
+  border: none;
+  background-color: rgb(255, 255, 0);
+  transform: scale(1.5);
+}
+
+main {
+  width: 100%;
+  animation: buongiorno3 2s ease-in forwards;
+  background-color: #FFC313;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-grow: 1;
+}
+@keyframes buongiorno3 {
+  0% {
+    transform: translate(250vh, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+main div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+main div .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 20%;
+  border: 1px dotted black;
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 5px 5px 13px -2px rgba(0, 0, 0, 0.54);
+  transition: all 0.3s linear;
+}
+main div .card:hover {
+  transform: scale(1.2);
+}
+main div .card img {
+  width: 100%;
+  border: 1px dotted black;
+  border-radius: 50px;
+}
+main div .card button {
+  width: 20%;
+  margin-bottom: 1em;
+  border: 1px dotted black;
+  border-radius: 50px;
+  background-color: #FFC313;
+  transition: all 0.2s linear;
+}
+main div .card button:hover {
+  border: none;
+  background-color: rgb(255, 255, 0);
+  transform: scale(1.5);
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+form input {
+  border-radius: 30px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+form button {
+  width: 20%;
+  margin-bottom: 1em;
+  border: 1px dotted black;
+  border-radius: 50px;
+  background-color: #FFC313;
+  transition: all 0.2s linear;
+  width: 60px;
+  background-color: white;
+}
+form button:hover {
+  border: none;
+  background-color: rgb(255, 255, 0);
+  transform: scale(1.5);
+}/*# sourceMappingURL=style.css.map */

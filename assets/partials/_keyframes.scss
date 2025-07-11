@@ -1,0 +1,13 @@
+@mixin buongiornissimo2($name, $from-x, $from-y, $to-x: 0, $to-y: 0, $duration: 2s, $timing: ease-in, $fill-mode: forwards) {
+  
+  @keyframes #{$name} {
+    0% {
+      transform: translate(#{$from-x}, #{$from-y});
+    }
+    100% {
+      transform: translate(#{$to-x}, #{$to-y});
+    }
+  }
+
+  animation: #{$name} $duration $timing $fill-mode;
+}

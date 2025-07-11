@@ -1,0 +1,108 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    @include flexColSB;
+    font: {
+        family: $fontZilla;
+        weight: 600; 
+    }
+}
+header {
+    @include flexCol;
+    width: 100%;
+nav {
+    @include flexRowSB;
+    background-color: $primary;
+    width: 100%;
+    @include buongiornissimo2(
+        buongiorno1,
+        -250vh, 0,
+        0,0
+    );
+    img {
+        width: 8%;
+    }
+    ul {
+        @include flexRow;
+        list-style-type: none;
+        li {
+            @include rounded;
+             transition: all 0.3s linear;
+            &:hover {
+              background-color: $secondary;
+              @include roundedDott;
+              transform: scale(1.2)
+        }} //lo lascio così come riferimento
+    }
+} 
+#hero {
+    @include flexCol;
+    @include roundedDott;
+    width: 60%;
+     @include buongiornissimo2(
+        buongiorno2,
+        0, -250vh,
+        0,0
+     );
+    .row {
+        @include flexRow;
+        h1 {
+    @include main-title;
+        }
+        img {
+            width: 45%;
+            @include rounded;
+            @include floating;
+        }
+    }
+    #btn-container {
+        width: 40%;
+        @include flexRowSB;
+        button {
+            @include floating-button;
+        }
+    }
+}}
+main {
+    width: 100%;
+     @include buongiornissimo2(
+         buongiorno3,
+        250vh, 0,
+        0,0
+     );
+    background-color: $primary;
+    @include flexRow;
+    flex-grow: 1;
+    div{
+        @include flexRowSB;
+        .card {
+            @include flexCol;
+            width: 20%;
+            @include roundedDott;
+            background-color: white;
+            @include floating;
+            img{
+                width: 100%;
+                @include roundedDott;
+            }
+            button {
+            @include floating-button;
+            }
+        }
+    }
+}
+ 
+form {
+    @include flexCol;
+    input {
+        @include rounded;
+        text-align: center;
+        margin-bottom: 1em;
+         
+    }
+    button {
+            @include floating-button;
+            width: 60px;
+            background-color: white;
+            }
+}
