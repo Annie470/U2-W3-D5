@@ -19,8 +19,6 @@ const caricaCard = function () {
       const spinner = document.getElementById("spinnerino");
       spinner.style.display = "none";
 
-      console.log(array);
-
       const cardContainer = document.getElementById("card-container");
       if (array.length === 0) {
         cardContainer.innerHTML = `
@@ -28,16 +26,16 @@ const caricaCard = function () {
         `;
       } else {
         array.forEach((prodotto) => {
-          const imageUrl = prodotto.imageUrl;
           cardContainer.innerHTML += `
           <div class="card m-small">
-          <img src="${imageUrl}" alt="product photo" />
+          <img onclick="allArrembaggio('${prodotto._id}')" src="${prodotto.imageUrl}" alt="product photo" />
           <h3 class="my-small">${prodotto.name}</h3>
           <p class="my-small p-small">${prodotto.description}</p>
           <p class="my-small">${prodotto.brand}</p>
           <p class="my-small">${prodotto.price}€</p>
           <button onclick="allArrembaggio('${prodotto._id}')" class="my-small" style="width: 80px">Dettagli</button>
-        </div>`;
+        <button onclick="dismorfismo('${prodotto._id}')" class="my-small" style="width: 80px">Riforma</button>
+          </div>`;
         });
       }
     })
@@ -49,3 +47,7 @@ const allArrembaggio = function (Id) {
   window.location.href = `./detail.html?eventId=${Id}`;
 };
 caricaCard();
+
+const dismorfismo = function (Id) {
+  location.assign(`./backoffice.html?eventId=${Id}`);
+};
