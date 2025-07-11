@@ -14,7 +14,9 @@ if (eventId) {
       if (response.ok) {
         return response.json();
       } else {
-        throw new Error(`Houston, la torre non riesce a gestire l'elemento`);
+        throw new Error(
+          `Houston, la torre non riesce a gestire l'elemento.. Codice: ${response.status}`
+        );
       }
     })
     .then((data) => {

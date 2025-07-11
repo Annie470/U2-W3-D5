@@ -15,7 +15,9 @@ fetch(endpoint + eventId, {
     if (response.ok) {
       return response.json();
     } else {
-      throw new Error(`Huston, atterraggio non riuscito..${response.status}`);
+      throw new Error(
+        `Huston, atterraggio non riuscito.. Emergenza: ${response.status}`
+      );
     }
   })
   .then((prodotto) => {
@@ -53,7 +55,9 @@ const addio = function () {
         alert(`Houston, la torre conferma l'eliminazione`);
         location.assign("/index.html");
       } else {
-        throw new Error("Houston, il prodotto è troppo resistente! Persiste");
+        throw new Error(
+          `Houston, il prodotto è troppo resistente! Persiste! Codice: ${response.status}`
+        );
       }
     })
     .catch((err) => {
