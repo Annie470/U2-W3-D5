@@ -8,3 +8,6 @@ const followTheWhiteRabbit = () => {
   };
   localStorage.setItem("WithLove", JSON.stringify(rabbit));
 };
+
+const span = document.getElementById("anno");
+span.innerText = new Date().getFullYear();

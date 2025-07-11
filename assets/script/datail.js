@@ -72,3 +72,6 @@ function apriModale() {
 function chiudiModale() {
   modale.classList.remove("active");
 }
+
+const span = document.getElementById("anno");
+span.innerText = new Date().getFullYear();

@@ -95,3 +95,6 @@ const btnEsplosione = document.getElementById("detonatore");
 btnEsplosione.addEventListener("click", () => {
   form.reset();
 });
+
+const span = document.getElementById("anno");
+span.innerText = new Date().getFullYear();

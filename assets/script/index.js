@@ -53,3 +53,6 @@ caricaCard();
 const dismorfismo = function (Id) {
   location.assign(`./backoffice.html?eventId=${Id}`);
 };
+
+const span = document.getElementById("anno");
+span.innerText = new Date().getFullYear();
