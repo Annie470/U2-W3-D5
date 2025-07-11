@@ -13,6 +13,9 @@ header {
 nav {
     @include flexRowSB;
     background-color: $primary;
+       @media (max-width: 540px) {
+    background-color: white;
+  }
     width: 100%;
     @include buongiornissimo2(
         buongiorno1,
@@ -48,11 +51,18 @@ nav {
         @include flexRow;
         h1 {
     @include main-title;
+      @media (max-width: 540px) {
+    font-size: 3em;
+  }
         }
         img {
             width: 45%;
             @include rounded;
             @include floating;
+              @include main-title;
+      @media (max-width: 540px) {
+    width: 35%;;
+  }
         }
     }
     #btn-container {
@@ -71,10 +81,17 @@ main {
         0,0
      );
     background-color: $primary;
+      @media (max-width: 540px) {
+    background-color: white;
+  }
     @include flexRow;
     flex-grow: 1;
     div{
         @include flexRowSB;
+        @media (max-width: 968px) {
+    flex-wrap: wrap;
+     @include flexRow;
+  }
         .card {
             @include flexCol;
             @include roundedDott;

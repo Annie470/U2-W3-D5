@@ -170,6 +170,11 @@ header nav {
   width: 100%;
   animation: buongiorno1 2s ease-in forwards;
 }
+@media (max-width: 540px) {
+  header nav {
+    background-color: white;
+  }
+}
 @keyframes buongiorno1 {
   0% {
     transform: translate(-250vh, 0);
@@ -227,14 +232,27 @@ header #hero .row h1 {
   font-weight: 800;
   font-size: 4rem;
 }
+@media (max-width: 540px) {
+  header #hero .row h1 {
+    font-size: 3em;
+  }
+}
 header #hero .row img {
   width: 45%;
   border-radius: 30px;
   box-shadow: 5px 5px 13px -2px rgba(0, 0, 0, 0.54);
   transition: all 0.3s linear;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 800;
+  font-size: 4rem;
 }
 header #hero .row img:hover {
   transform: scale(1.2);
+}
+@media (max-width: 540px) {
+  header #hero .row img {
+    width: 35%;
+  }
 }
 header #hero #btn-container {
   width: 40%;
@@ -275,11 +293,25 @@ main {
     transform: translate(0, 0);
   }
 }
+@media (max-width: 540px) {
+  main {
+    background-color: white;
+  }
+}
 main div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+}
+@media (max-width: 968px) {
+  main div {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
 }
 main div .card {
   display: flex;
