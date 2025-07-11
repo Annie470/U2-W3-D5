@@ -1,4 +1,4 @@
-@mixin buongiornissimo2($name, $from-x, $from-y, $to-x: 0, $to-y: 0, $duration: 2s, $timing: ease-in, $fill-mode: forwards) {
+@mixin buongiornissimo2($name, $from-x, $from-y, $to-x: 0, $to-y: 0, $duration: 1.3s, $timing: linear, $fill-mode: forwards) {
   
   @keyframes #{$name} {
     0% {

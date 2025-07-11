@@ -201,7 +201,7 @@ header nav {
   flex-direction: row;
   background-color: #FFC313;
   width: 100%;
-  animation: buongiorno1 2s ease-in forwards;
+  animation: buongiorno1 1.3s linear forwards;
 }
 @media (max-width: 540px) {
   header nav {
@@ -244,7 +244,7 @@ header #hero {
   border: 1px dotted black;
   border-radius: 50px;
   width: 60%;
-  animation: buongiorno2 2s ease-in forwards;
+  animation: buongiorno2 1.3s linear forwards;
 }
 @keyframes buongiorno2 {
   0% {
@@ -310,7 +310,7 @@ header #hero #btn-container button:hover {
 
 main {
   width: 100%;
-  animation: buongiorno3 2s ease-in forwards;
+  animation: buongiorno3 1.3s linear forwards;
   background-color: #FFC313;
   display: flex;
   align-items: center;
