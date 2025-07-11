@@ -34,11 +34,10 @@ const caricaCard = function () {
           <img src="${imageUrl}" alt="product photo" />
           <h3 class="my-small">${prodotto.name}</h3>
           <p class="my-small p-small">${prodotto.description}</p>
+          <p class="my-small">${prodotto.brand}€</p>
           <p class="my-small">${prodotto.price}€</p>
           <button onclick="allArrembaggio('${prodotto._id}')" class="my-small" style="width: 80px">Dettagli</button>
-        </div>
-                
-          `;
+        </div>`;
         });
       }
     })
