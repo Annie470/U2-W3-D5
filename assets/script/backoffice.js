@@ -80,7 +80,7 @@ form.addEventListener("submit", (e) => {
         form.reset();
       } else {
         throw new Error(
-          `Houston, abbiamo un problema! Status: ${response.status}`
+          `Houston, abbiamo un problema! Codice: ${response.status}`
         );
       }
     })

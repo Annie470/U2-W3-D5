@@ -15,7 +15,7 @@ fetch(endpoint + eventId, {
     if (response.ok) {
       return response.json();
     } else {
-      throw new Error("Huston, atterraggio non riuscito..");
+      throw new Error(`Huston, atterraggio non riuscito..${response.status}`);
     }
   })
   .then((prodotto) => {

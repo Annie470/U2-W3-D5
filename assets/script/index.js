@@ -12,7 +12,9 @@ const caricaCard = function () {
       if (response.ok) {
         return response.json();
       } else {
-        throw new Error("Houston abbiamo un problema!");
+        throw new Error(
+          `Houston abbiamo un problema! Codice: ${response.status}`
+        );
       }
     })
     .then((array) => {
