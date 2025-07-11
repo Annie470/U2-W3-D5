@@ -89,3 +89,8 @@ form.addEventListener("submit", (e) => {
       console.log("Ops!", err);
     });
 });
+
+const btnEsplosione = document.getElementById("detonatore");
+btnEsplosione.addEventListener("click", () => {
+  form.reset();
+});

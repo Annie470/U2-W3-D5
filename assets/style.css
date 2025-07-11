@@ -357,4 +357,11 @@ form button:hover {
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
   display: inline-block;
+}
+
+#detonatore {
+  width: 100%;
+  background-color: rgb(236, 12, 12);
+  color: white;
+  border-radius: 30px;
 }/*# sourceMappingURL=style.css.map */
