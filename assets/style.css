@@ -444,6 +444,7 @@ form button:hover {
   cursor: pointer;
 }
 #special-main h1 {
+  text-align: center;
   font-size: 3rem;
   margin-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */
