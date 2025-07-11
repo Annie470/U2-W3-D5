@@ -236,6 +236,12 @@ header nav ul li:hover {
   border-radius: 50px;
   transform: scale(1.2);
 }
+header nav a {
+  color: black;
+}
+header nav a:visited {
+  color: black;
+}
 header #hero {
   display: flex;
   align-items: center;

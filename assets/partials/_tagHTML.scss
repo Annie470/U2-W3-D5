@@ -37,6 +37,12 @@ nav {
               transform: scale(1.2)
         }} //lo lascio così come riferimento
     }
+    a{
+    color: black;
+    &:visited {
+        color: black;
+    }
+}
 } 
 #hero {
     @include flexCol;
